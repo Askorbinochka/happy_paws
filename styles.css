@@ -52,7 +52,7 @@ ul {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 
 /* header */
@@ -167,8 +167,8 @@ header {
 /* hero section */
 .hero-section {
     padding: 220px 0 100px;
-    background-image: linear-gradient(102deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0)), url('hero.png');
-    background-color: #333; 
+    background-image: linear-gradient(102deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0)), url(/images/image\ 1559\ \(2\).png);
+    background-color: #333;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -211,7 +211,6 @@ header {
     margin-bottom: 10px;
 }
 
-
 /* about section */
 .about-section {
     padding: 80px 0;
@@ -223,9 +222,16 @@ header {
     gap: 50px;
 }
 
+.about-text {
+    flex: 1; 
+}
 
 .about-text p {
     font-size: 18px;
+}
+
+.about-image {
+    flex: 1;
 }
 
 .about-image img {
@@ -242,7 +248,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Для мобільних екранів */
 }
 
 .pets-list {
@@ -254,10 +260,10 @@ header {
 
 .pet-item {
     flex-basis: calc((100% - 60px) / 3);
-    background-color: var(--color-white);
+    background-color: var(--color-white); /* Змінено фон для контрасту */
     border-radius: 20px;
     overflow: hidden;
-    color: var(--color-primary-dark); 
+    color: var(--color-primary-dark); /* Змінено колір тексту */
     transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -331,7 +337,6 @@ header {
     gap: 8px;
 }
 
-
 .pet-gender {
     font-size: 16px;
     font-weight: 400;
@@ -371,7 +376,7 @@ header {
     padding: 40px 20px;
     width: 250px;
     text-align: center;
-    background-color: var(--color-white); /* Додано фон для контрасту */
+    background-color: var(--color-white); 
     transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -401,22 +406,14 @@ header {
     padding: 60px 0;
 }
 
-
-.about-image {
-    flex: 1;
-}
-
 .contact-container {
     display: flex;
     gap: 50px;
-    align-items: stretch; /* Змушує карту розтягнутися по висоті форми */
-    justify-content: center;
+    align-items: stretch;
 }
 
-.contact-form-wrapper, 
-.map-container {
+.form-container {
     flex: 1;
-    min-width: 300px;
 }
 
 .form-subtitle {
@@ -468,6 +465,7 @@ header {
 }
 
 .map-container {
+    flex: 1;
     min-height: 400px;
 }
 
@@ -478,7 +476,7 @@ header {
 
 /* footer */
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('footer.png') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/footer\ \(2\).png') center/cover;
     background-color: var(--color-primary-dark);
     color: var(--color-white);
     padding: 60px 0 40px;
