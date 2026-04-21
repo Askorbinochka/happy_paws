@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лапа Надії - Притулок для тварин</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img class="paw-icon" src="/images/logo.png" alt="logo">
+                <div class="logo-text">Лапа<br>Надії</div>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li><a class="header-link" href="#about">Про нас</a></li>
+                    <li><a class="header-link" href="#pets">Наші тваринки</a></li>
+                    <li><a class="header-link" href="#help">Як допомогти</a></li>
+                    <li><a class="header-link" href="#footer">Контакти</a></li>
+                </ul>
+            </nav>
+            <a href="#pets" class="button">Подарувати дім</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <h1 class="hero-title">Твій новий<br>найкращий друг<br>чекає тут.</h1>
+                <p class="hero-text">Ми допомогли 500+ тваринкам знайти сім'ю.<br>Стань частиною нашої історії.</p>
+                <a href="#help" class="button-help button">Допомогти нам</a>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2 class="section-title">Про нас</h2>
+                    <p><strong>«Лапа Надії»</strong> – це місце, де кожне серце знаходить турботу. Ми не просто рятуємо тварин із вулиці, ми створюємо для них безпечний простір, де вони знову вчаться довіряти людям. Наша місія – знайти кожному хвостику люблячу родину та теплий дім.</p>
+                </div>
+                <div class="about-image">
+                    <img src="/images/cats.jpg" alt="Територія притулку">
+                </div>
+            </div>
+        </section>
+
+        <section class="pets-section" id="pets">
+            <div class="container">
+                <h2 class="section-title centered">Хвостики, що чекають на тебе</h2>
+                
+                <div class="filter-buttons centered">
+                    <button class="button active" type="button" data-filter="all">Всі</button>
+                    <button class="button button-outline" type="button" data-filter="cat">Котики</button>
+                    <button class="button button-outline" type="button" data-filter="dog">Песики</button>
+                </div>
+
+                <ul class="pets-list">
+                    <li class="pet-item cat" data-category="cat">
+                        <div class="pet-image-wrapper">
+                            <span class="pet-tag pet-tag--looking">Шукає дім</span>
+                            <img class="pet-image" src="/images/Мурчик.png" alt="Мурчик">
+                        </div>
+                        <div class="pet-info">
+                            <h3 class="pet-name">Мурчик <span class="pet-gender">♂</span></h3>
+                            <p class="pet-meta">Кіт, 2 роки.</p>
+                            <p class="pet-desc">Енергійний бешкетник.</p>
+                            <a href="tel:+380971246364" class="button button-mini">Забрати додому</a>
+                        </div>
+                    </li>
+                    <li class="pet-item cat" data-category="cat">
+                        <div class="pet-image-wrapper">
+                            <span class="pet-tag pet-tag--looking">Шукає дім</span>
+                            <img class="pet-image" src="/images/мімімі.png" alt="Мімімі">
+                        </div>
+                        <div class="pet-info">
+                            <h3 class="pet-name">Мімімі <span class="pet-gender">♀</span></h3>
+                            <p class="pet-meta">Кішка, 7 місяців.</p>
+                            <p class="pet-desc">Маленький клубочок енергії.</p>
+                            <a href="tel:+380971246364" class="button button-mini">Забрати додому</a>
+                        </div>
+                    </li>
+                    <li class="pet-item dog" data-category="dog">
+                        <div class="pet-image-wrapper">
+                            <span class="pet-tag pet-tag--looking">Шукає дім</span>
+                            <img class="pet-image" src="/images/рекс.png" alt="Рекс">
+                        </div>
+                        <div class="pet-info">
+                            <h3 class="pet-name">Рекс <span class="pet-gender">♂</span></h3>
+                            <p class="pet-meta">Собака, 3 роки.</p>
+                            <p class="pet-desc">Любить довгі прогулянки.</p>
+                            <a href="tel:+380971246364" class="button button-mini">Забрати додому</a>
+                        </div>
+                    </li>
+                    <li class="pet-item dog" data-category="dog">
+                        <div class="pet-image-wrapper">
+                            <span class="pet-tag pet-tag--looking">Шукає дім</span>
+                            <img class="pet-image" src="/images/Патрончик.png" alt="Патрончик">
+                        </div>
+                        <div class="pet-info">
+                            <h3 class="pet-name">Патрончик <span class="pet-gender">♂</span></h3>
+                            <p class="pet-meta">Собака, 1 рік.</p>
+                            <p class="pet-desc">Тримає цей район.</p>
+                            <a href="tel:+380971246364" class="button button-mini">Забрати додому</a>
+                        </div>
+                    </li>
+                    <li class="pet-item cat" data-category="cat">
+                        <div class="pet-image-wrapper">
+                            <span class="pet-tag pet-tag--looking">Шукає дім</span>
+                            <img class="pet-image" src="/images/барсік.png" alt="Барсік">
+                        </div>
+                        <div class="pet-info">
+                            <h3 class="pet-name">Барсік <span class="pet-gender">♂</span></h3>
+                            <p class="pet-meta">Кіт, 1 рік.</p>
+                            <p class="pet-desc">Допоможе вам приймати рішення.</p>
+                           <a href="tel:+380971246364" class="button button-mini">Забрати додому</a>
+                        </div>
+                    </li>
+                    <li class="pet-item dog" data-category="dog">
+                        <div class="pet-image-wrapper">
+                            <span class="pet-tag pet-tag--looking">Шукає дім</span>
+                            <img class="pet-image" src="/images/майкл.png" alt="Майкл">
+                        </div>
+                        <div class="pet-info">
+                            <h3 class="pet-name">Майкл <span class="pet-gender">♂</span></h3>
+                            <p class="pet-meta">Собака, 3 місяці.</p>
+                            <p class="pet-desc">Любить комп'ютери.</p>
+                           <a href="tel:+380971246364" class="button button-mini">Забрати додому</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="centered">
+                    <button class="button" type="button">Показати ще</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="help-section" id="help">
+            <div class="container">
+                <h2 class="section-title centered">Твоя допомога рятує життя</h2>
+                
+                <ul class="help-list">
+                    <li class="help-card">
+                        <img class="help-icon" src="/images/image 1568.png" alt="help-icon">
+                        <h3 class="help-title">Стати<br>волонтером</h3>
+                        <p class="help-text">Приєднуйтеся до команди для прогулянок та догляду.</p>
+                    </li>
+                    <li class="help-card">
+                        <img class="help-icon" src="/images/гроші.png" alt="help-icon">
+                        <h3 class="help-title">Зробити<br>донат</h3>
+                        <p class="help-text">Кожна гривня йде на корм та лікування.</p>
+                    </li>
+                    <li class="help-card">
+                        <img class="help-icon" src="/images/корм.png" alt="help-icon">
+                        <h3 class="help-title">Надіслати<br>корм</h3>
+                        <p class="help-text">Ми завжди потребуємо якісної їжі для наших підопічних.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-container">
+                <div class="form-container">
+                    <h2 class="section-title contact-title">Стань нашим другом</h2>
+                    <p class="form-subtitle">Заповни форму, щоб приєднатися до нашої команди!</p>
+                    
+                    <form action="#">
+                        <div class="form-field">
+                            <input class="form-input" type="text" placeholder="Ім'я" required>
+                        </div>
+                        <div class="form-field">
+                            <input class="form-input" type="tel" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-field">
+                            <input class="form-input" type="email" placeholder="Електронна пошта" required>
+                        </div>
+                        <div class="form-field">
+                            <select class="form-input">
+                                <option value="" disabled selected>Оберіть варіант</option>
+                                <option value="vol">Стати волонтером</option>
+                                <option value="donate">Зробити донат</option>
+                                <option value="food">Передати корм</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="button form-button">Надіслати анкету</button>
+                        <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link" href="#">політикою конфіденційності</a></p>
+                    </form>
+                </div>
+                <div class="map-container">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2638.1186714275066!2d25.0401878!3d48.5309605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4736d2eb1d123b3f%3A0xc3c5f5904571932!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgOCwg0JrQvtC70L7QvNC40Y8sINCG0LLQsNC90L4t0KTRgNCw0L3QutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzgyMDA!5e0!3m2!1suk!2sua!4v1713440000000!5m2!1suk!2sua" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img class="paw-icon" src="/images/logo.png" alt="logo">
+                <div class="logo-text" style="color: var(--color-primary-light);">Лапа<br>Надії</div>
+            </div>
+            
+            <ul class="footer-menu">
+                <li><a class="header-link" href="#about">Про нас</a></li>
+                <li><a class="header-link" href="#pets">Наші тваринки</a></li>
+                <li><a class="header-link" href="#help">Як допомогти</a></li>
+                <li><a class="header-link" href="#footer">Контакти</a></li>
+            </ul>
+
+            <div class="footer-address">
+                <ul class="contact-list">
+                    <li><p class="contact-text">+ 38 (097) 124 63 64</p></li>
+                    <li><p class="contact-text">happypaws@gmail.com</p></li>
+                    <li><p class="contact-text">Україна, м. Коломия,<br>вул. Січових Стрільців 8</p></li>
+                </ul>
+            </div>
+
+            <div class="footer-policy">
+                <a class="header-link" href="#">Політика конфіденційності</a>
+                <p class="footer-copyright">© 2022 Дані захищені</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
